@@ -76,7 +76,7 @@ func getPerson(response http.ResponseWriter, request *http.Request) {
 }
 
 func main() {
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://user1:user123@cluster0-9tn5d.azure.mongodb.net/test?retryWrites=true&w=majority"))
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb+srv://<user>:<password>@cluster0-9tn5d.azure.mongodb.net/test?retryWrites=true&w=majority"))
 	if err != nil {
 		log.Panic(err)
 	}
