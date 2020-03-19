@@ -16,7 +16,7 @@ import (
 
 var db *mongo.Database
 var coll *mongo.Collection
-var ctx context.Context
+var ctx context.Context // Dont define the conetxt as global variable as it will result in timeouts
 
 // Person model
 type Person struct {
